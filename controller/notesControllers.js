@@ -2,7 +2,7 @@ const { NoteModule } = require("../model/noteModule");
 
 const createNote = async (req, res) => {
   try {
-    note = new NoteModule(req.body);
+   const note = new NoteModule(req.body);
     await note.save();
     res.send({ msg: "note added successfully " });
   } catch (error) {
