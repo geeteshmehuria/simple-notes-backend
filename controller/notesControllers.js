@@ -22,7 +22,6 @@ const getNotes = async (req, res) => {
 };
 
 const updateNote = async (req, res) => {
-  // const { title, singerName, albumName, releaseYear } = req.body;
   const { id } = req.params;
   // console.log(id);
   try {

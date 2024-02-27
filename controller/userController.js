@@ -25,8 +25,8 @@ const registerUser = async (req, res) => {
     res.status(500).send({ error: `Error at registration ${error}` });
   }
 };
+// nbb
 
-//user login with the help or this function
 const loginUser = async (req, res) => {
   const { email, password } = req.body;
   try {
