@@ -14,7 +14,6 @@ const createNote = async (req, res) => {
 const getNotes = async (req, res) => {
   try {
     const notes = await NoteModule.find({ userId: req.body.userId });
-    //console.log('notes',notes)
     res.send({ notes });
   } catch (error) {
     console.log(`Error in getting all Notes : ${error}`);
