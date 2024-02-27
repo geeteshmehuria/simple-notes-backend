@@ -5,7 +5,7 @@ const auth = async (req, res, next) => {
   if (token) {
     const decoded = jwt.verify(token, "masai");
     if (decoded) {
-      // console.log(decoded)
+
       req.body.userId = decoded.userId;
       req.body.authors = decoded.authors;
       next();
